@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="Subscriptions" customModuleProvider="target">
+            <connections>
+                <outlet property="addSubButton" destination="QL2-IU-5pk" id="2GB-LQ-WyC"/>
+                <outlet property="labelCost" destination="k4e-Bq-vwX" id="fqH-Yp-8GM"/>
+                <outlet property="tableView" destination="jgh-Ye-CdB" id="hdP-z7-p6s"/>
+                <outlet property="totalCostView" destination="74b-kA-NT4" id="yjt-3O-c1U"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="HomeViewController" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TRa-Kk-dqu">
+                    <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="74b-kA-NT4">
+                            <rect key="frame" x="25" y="0.0" width="364" height="120.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4e-Bq-vwX">
+                                    <rect key="frame" x="25" y="50" width="314" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QL2-IU-5pk">
+                                    <rect key="frame" x="304" y="60.5" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="CI4-6z-c45"/>
+                                        <constraint firstAttribute="height" constant="50" id="U88-4E-kvj"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain"/>
+                                    <connections>
+                                        <action selector="addSubButtonPressed:" destination="-1" eventType="touchUpInside" id="6ud-in-ghb"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="QL2-IU-5pk" secondAttribute="trailing" constant="10" id="8Iy-ll-JD3"/>
+                                <constraint firstItem="k4e-Bq-vwX" firstAttribute="top" secondItem="74b-kA-NT4" secondAttribute="top" constant="50" id="Nn2-D4-aZd"/>
+                                <constraint firstAttribute="bottom" secondItem="k4e-Bq-vwX" secondAttribute="bottom" constant="50" id="eNo-4c-2bT"/>
+                                <constraint firstAttribute="trailing" secondItem="k4e-Bq-vwX" secondAttribute="trailing" constant="25" id="fKA-rQ-iXC"/>
+                                <constraint firstAttribute="bottom" secondItem="QL2-IU-5pk" secondAttribute="bottom" constant="10" id="p5a-4y-a4J"/>
+                                <constraint firstItem="k4e-Bq-vwX" firstAttribute="leading" secondItem="74b-kA-NT4" secondAttribute="leading" constant="25" id="yZz-bt-VwG"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jgh-Ye-CdB">
+                            <rect key="frame" x="0.0" y="145.5" width="414" height="668.5"/>
+                            <color key="backgroundColor" red="0.2941176593" green="0.62745100259999997" blue="0.61176472900000001" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                        </tableView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="74b-kA-NT4" firstAttribute="leading" secondItem="TRa-Kk-dqu" secondAttribute="leading" constant="25" id="J06-Lv-7dN"/>
+                        <constraint firstItem="74b-kA-NT4" firstAttribute="top" secondItem="TRa-Kk-dqu" secondAttribute="top" id="UXs-m3-qcG"/>
+                        <constraint firstItem="jgh-Ye-CdB" firstAttribute="leading" secondItem="TRa-Kk-dqu" secondAttribute="leading" id="eXu-dQ-bHx"/>
+                        <constraint firstAttribute="trailing" secondItem="jgh-Ye-CdB" secondAttribute="trailing" id="fEt-l2-k5F"/>
+                        <constraint firstAttribute="bottom" secondItem="jgh-Ye-CdB" secondAttribute="bottom" id="j4l-xQ-XGa"/>
+                        <constraint firstAttribute="trailing" secondItem="74b-kA-NT4" secondAttribute="trailing" constant="25" id="m7S-iQ-OT6"/>
+                        <constraint firstItem="jgh-Ye-CdB" firstAttribute="top" secondItem="74b-kA-NT4" secondAttribute="bottom" constant="25" id="rSS-IW-Xj5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <constraints>
+                <constraint firstItem="TRa-Kk-dqu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="NIG-X2-ToT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="TRa-Kk-dqu" secondAttribute="bottom" id="Qeh-t0-LZ4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TRa-Kk-dqu" secondAttribute="trailing" id="qaq-Sz-njy"/>
+                <constraint firstItem="TRa-Kk-dqu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="vmQ-tV-j3h"/>
+            </constraints>
+            <point key="canvasLocation" x="121" y="-11"/>
+        </view>
+    </objects>
+</document>
