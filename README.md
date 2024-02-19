@@ -26,8 +26,9 @@ Subscriptions is an application for tracking subscription expenses. It allows us
 - Operating system: iOS.
 
 ## Installation
-1. Go to the [GitHub project page](https://github.com/fruit-kit/subscriptions).
-2. Download and install the application on your device.
+1. Clone the repository to your local machine.
+2. Open the project in Xcode.
+3. Build and run the project on a simulator or a physical device.
 
 ## Configuration
 - **Language Change:** Language change is supported in the application settings. Currently, two languages are supported: English and Russian. Please note that for the correct display of the user interface after changing the language, a restart of the application may be required.
@@ -72,8 +73,9 @@ Subscriptions - это приложение для отслеживания ра
 - Операционная система: iOS.
 
 ## Установка
-1. Перейдите на страницу [GitHub проекта](https://github.com/fruit-kit/subscriptions).
-2. Скачайте и установите приложение на свое устройство.
+1. Клонируйте репозиторий на свой локальный компьютер.
+2. Откройте проект в Xcode.
+3. Соберите и запустите проект на симуляторе или физическом устройстве.
 
 ## Настройка
 - **Смена языка:** Поддерживается смена языка в настройках приложения. На данный момент поддерживаются два языка: английский и русский. Пожалуйста, обратите внимание, что для корректного отображения пользовательского интерфейса после смены языка может потребоваться перезапуск приложения.
